@@ -1,12 +1,13 @@
 
+import Intro from "@/components/Intro"
 
 
 
-type Props = {}
-
-const page = (props: Props) => {
+const page = () => {
   return (
-    <div>home</div>
+    <>
+      <Intro/>
+    </>
   )
 }
 
