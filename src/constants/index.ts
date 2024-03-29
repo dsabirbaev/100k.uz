@@ -3,6 +3,8 @@ import { electronika, texnika, kiyim, poyabzallar, aksessuarlar, gozzalik, salom
 uy, qurilish, avtotovarlar, bolalar, sport, xobbi, ovqat, maishiy, kanselyariya, hayvonlar, kitoblar, dacha} from "@/assets/images/categories";
 
 
+import { truck, money, call } from "@/assets/images/service";
+
 
 const categories = [
 	{   
@@ -107,4 +109,32 @@ const categories = [
 ]
 
 
-export { categories };
+
+const service = [
+	{   
+        id: 1,
+		img:   truck,
+		name: 'Tezkor yetkazib berish xizmati',
+		text: 'Buyurtmangiz O\'zbekistonning barcha viloyatlariga 3 kun ichida yetqazib beriladi.',
+	},
+	{   
+        id: 2,
+		img: money,
+		name: 'To\'lov istalgan usulda',
+		text: 'Buyurtmani oldindan click, payme yoki buyurtmani qo\'lingizga olganingizdan keyin amalga oshiring.',
+	},
+	{   
+        id: 3,
+		img: call,
+		name: 'CALL-CENTER',
+		text: 'Dam olish kunlarisiz qo\'llab quvvatlash bo\'limi mavjud. +998 55 500 55-11',
+	},
+	{   
+        id: 4,
+		name: 'Mijozlarni rag\'batlantirish tizimi',
+		text: 'Doimiy mijozlar uchun sovg\'alar va bonuslar taqdim etiladi.',
+	}
+
+]
+
+export { categories, service };
