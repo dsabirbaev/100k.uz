@@ -3,7 +3,7 @@ import { electronika, texnika, kiyim, poyabzallar, aksessuarlar, gozzalik, salom
 uy, qurilish, avtotovarlar, bolalar, sport, xobbi, ovqat, maishiy, kanselyariya, hayvonlar, kitoblar, dacha} from "@/assets/images/categories";
 
 
-import { truck, money, call } from "@/assets/images/service";
+import { truck, money, call, gift } from "@/assets/images/service";
 
 
 const categories = [
@@ -131,6 +131,7 @@ const service = [
 	},
 	{   
         id: 4,
+		img: gift,
 		name: 'Mijozlarni rag\'batlantirish tizimi',
 		text: 'Doimiy mijozlar uchun sovg\'alar va bonuslar taqdim etiladi.',
 	}

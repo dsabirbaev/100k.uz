@@ -17,11 +17,11 @@ const Service = () => {
                <div className="flex  justify-between">
                 {
                     service?.map((item) => (
-                        <div key={item?.id}>
+                        <div key={item?.id} className="flex flex-col items-center w-[212px]">
                            
-                           <Image  src={item?.img} width={80} height={64} alt={item?.name}/>
-                            <p className="text-center mb-2">{item?.name}</p>
-                            <p className="text-center">{item?.text}</p>
+                           <Image  src={item?.img} width={80} height={64} alt={item?.name} className="mb-4"/>
+                            <p className="font-bold text-[18px] text-center">{item?.name}</p>
+                            <p className="text-[14px] text-[#242424] text-center">{item?.text}</p>
                         </div>
                     ))
                 }
