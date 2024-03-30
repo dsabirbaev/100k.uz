@@ -5,6 +5,7 @@ uy, qurilish, avtotovarlar, bolalar, sport, xobbi, ovqat, maishiy, kanselyariya,
 
 import { truck, money, call, gift } from "@/assets/images/service";
 
+import sunglass	 from "../assets/images/sunglasses.png";
 
 const categories = [
 	{   
@@ -138,4 +139,35 @@ const service = [
 
 ]
 
-export { categories, service };
+const product = [
+	{   
+        id: 1,
+		img:   sunglass,
+		name: 'Bluetoothli ko\'zoynak',
+		price: '147,000',
+		order: '400'
+	},
+	{   
+        id: 2,
+		img:   sunglass,
+		name: 'Bluetoothli ko\'zoynak',
+		price: '147,000',
+		order: '400'
+	},
+	{   
+        id: 3,
+		img:   sunglass,
+		name: 'Bluetoothli ko\'zoynak',
+		price: '147,000',
+		order: '400'
+	},
+	{   
+        id: 4,
+		img:   sunglass,
+		name: 'Bluetoothli ko\'zoynak',
+		price: '147,000',
+		order: '400'
+	},
+]
+
+export { categories, service, product };
