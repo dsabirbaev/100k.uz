@@ -1,8 +1,15 @@
 
+type StaticImageData = {
+    src: string;
+    height: number;
+    width: number;
+    blurDataURL?: string;
+};
+
 
 export interface IProducts {
     id: number,
-    img:   string,
+    img:   StaticImageData,
     name: string,
     price: string,
     order: string
