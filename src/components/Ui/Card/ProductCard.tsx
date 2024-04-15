@@ -2,13 +2,15 @@
 
 
 import { FC } from "react";
-import Image from "next/image"
+import Image from "next/image";
+import Link from "next/link";
+
 
 import { ICardProps } from "@/types";
 
 const ProductCard: FC<ICardProps> = ({ data:{img, name, price, order, id} }) => {
   return (
-    <div className="w-[219px] bg-white rounded-lg">
+    <Link href={`/product/${id}`} className="w-[219px] bg-white rounded-lg">
         <Image src={img} alt={name} className="mb-1" />
         <div className="p-2">
             <p className="mb-2">{name}</p>
@@ -22,7 +24,7 @@ const ProductCard: FC<ICardProps> = ({ data:{img, name, price, order, id} }) => 
                 <span>{order}</span>
             </div>
         </div>
-    </div>
+    </Link>
   )
 }
 
