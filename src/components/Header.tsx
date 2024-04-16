@@ -41,9 +41,14 @@ const Header = () => {
                 {
                   menu ? (
                     <ul className="absolute top-[160%] left-[-20px] flex flex-col bg-white text-black w-[160px] rounded-lg py-2 text-[15px] border shadow-md">
-                      <li className="hover:bg-gray-50 py-2 pl-6">Aloqa uchun</li>
+                      <li className="hover:bg-gray-50 py-2 pl-6">
+                        <Link href="/contacts">
+                          Aloqa uchun
+                        </Link>
+                      </li>
                       <li className="hover:bg-gray-50 py-2 pl-6">Profil</li>
                       <li className="hover:bg-gray-50 py-2 pl-6">Adminlar uchun</li>
+                      
                       <li className="hover:bg-gray-50 py-2 pl-6">Sozlamalar</li>
                     </ul>
                   ): null
