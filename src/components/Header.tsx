@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 
 //// react icons
 import { IoLogoAndroid } from "react-icons/io";
@@ -56,7 +56,10 @@ const Header = () => {
       <div className="bg-white">
           <div className="container">
               <div className="flex items-center justify-between h-[63px]">
-                <Image src={logo} alt="logo" height={30}/>
+                <Link href="/" >
+                  <Image src={logo} alt="logo" height={30}/>
+                </Link>
+                
 
                 <div className="flex gap-x-2 justify-between rounded-full border overflow-hidden h-[37px] w-[428px] pl-4">
                   <input type="text" placeholder="qidiruv..." className="border-none outline-none w-full"/>
