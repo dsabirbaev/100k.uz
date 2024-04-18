@@ -14,8 +14,10 @@ const page = () => {
                 <Link href="/" className="flex items-center gap-x-1 text-[#2f8af5] text-[18px]">
                     <FaArrowLeft /> <span> Do‘konga qaytish</span>
                 </Link>
-
-                <Image src={logo} alt="logo" height={24}/>
+                <Link href="/" title="home">
+                    <Image src={logo} alt="logo" height={24}/>
+                </Link>
+               
             </div>
         </header>
 
