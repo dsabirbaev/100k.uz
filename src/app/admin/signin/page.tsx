@@ -1,9 +1,9 @@
-
+"use client";
 
 import Link from "next/link"
 import { FaArrowLeft } from "react-icons/fa";
 import Image from "next/image";
-
+import InputMask from 'react-input-mask';
 
 import logo from "@/assets/icons/100k.png";
 const page = () => {
@@ -28,8 +28,19 @@ const page = () => {
                     <span>kabinetiga kirish</span>
                 </h1>
 
-                <div className="flex flex-col gap-y-3 mb-20">
-                    <input type="text" placeholder="Telefon raqamingiz" className="bg-[#ECEEF799] outline-none border-none rounded-[16px] text-[20px] h-[64px] px-[10px] w-[414px] placeholder:text-[16px]"/>
+                <div className="flex flex-col gap-y-3 mb-20 w-[414px]">
+                    <div className="rounded-lg overflow-hidden bg-[#ECEEF799] relative h-[64px]">
+                        <label for="phone" className="text-[12px] absolute top-[10px] left-4 text-[#2b2b2b]">
+                            Telefon raqamangiz
+                        </label>
+                        <span className="absolute text-[20px] left-4 bottom-1 text-[#2b2b2b]">
+                            +998
+                        </span>
+                        <InputMask id="phone" className="absolute bottom-1 left-0 w-full focus:ring-0 rounded-[16px] text-[20px]  border-none outline-none bg-transparent pl-[68px] placeholder:text-[#2b2b2b]" mask="(99)999-99-99" maskChar="-" type="tel" placeholder="(XX) XXX-XX-XX">
+                                    
+                        </InputMask>
+                    </div>
+                   
                     <label htmlFor="g" className="flex items-center gap-x-1">
                         <input id="g" type="checkbox" className="w-[15px] h-[15px]"/>
                         <p className="text-[14px]">Men
