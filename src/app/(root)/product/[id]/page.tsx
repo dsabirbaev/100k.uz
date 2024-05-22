@@ -5,7 +5,7 @@ import Image from "next/image"
 import sunglass	 from "@/assets/images/sunglasses.png"
 import user	 from "@/assets/images/user.png"
 import Link from "next/link"
-
+import InputMask from 'react-input-mask';
 
 
 const page = () => {
@@ -59,6 +59,16 @@ const page = () => {
 
                                 <div className="border rounded-[100px] py-[11px] px-[15px] mb-5">
                                     <input type="text" placeholder="Telefon raqamingiz" className="border-none outline-none"/>
+                                </div>
+
+                                <div className="rounded-[100px] overflow-hidden bg-transparent border relative h-[45px] px-[15px] mb-5">
+                                
+                                    <span className="absolute left-4 bottom-1 text-gray-400">
+                                        +998
+                                    </span>
+                                    <InputMask className=" absolute bottom-1 left-0 bg-transparent w-full focus:ring-0 rounded-[16px] border-none outline-none pl-[68px] placeholder:text-gray-400" mask="(99)999-99-99" maskChar="_" type="tel" placeholder="(__)___-__-__">
+                                                
+                                    </InputMask>
                                 </div>
                                 
                                 <div className="border rounded-[100px] py-[11px] px-[15px] mb-5">
