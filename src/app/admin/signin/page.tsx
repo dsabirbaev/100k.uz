@@ -29,7 +29,7 @@ const page = () => {
                 </h1>
 
                 <div className="flex flex-col gap-y-3 mb-20 w-[414px]">
-                    <div className="rounded-lg overflow-hidden bg-[#ECEEF799] relative h-[64px]">
+                    <div className="rounded-[20px] overflow-hidden bg-[#ECEEF799] relative h-[64px]">
                         <label for="phone" className="text-[12px] absolute top-[10px] left-4 text-[#2b2b2b]">
                             Telefon raqamangiz
                         </label>

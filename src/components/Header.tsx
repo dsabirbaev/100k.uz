@@ -74,7 +74,7 @@ const Header = () => {
                   </span>
                 </div>
 
-                <Link href="./admin/signin" className="flex items-center gap-x-3 cursor-pointer group">
+                <Link href="./admin" className="flex items-center gap-x-3 cursor-pointer group">
                   <FaUser className="group-hover:text-[#eb0000] transition"/>
                   <span className="text-[16px] text-[#242424] group-hover:text-[#eb0000] transition">Mening kabinetim</span>
                 </Link>
