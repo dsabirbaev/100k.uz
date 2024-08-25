@@ -7,10 +7,10 @@ const page = () => {
     <>
       <section>
         <div className="container">
-          <div className="bg-[#007aff] px-6 py-10 pt-0">
+          <div className="bg-[#007aff] px-6 pb-10 pt-28">
             <div className="flex items-center justify-center flex-col py-10">
               
-              <span className="bg-white rounded-full pb-2 mb-10"> 
+              <span className="bg-white rounded-full p-2 mb-10"> 
                 <HiUser className="text-6xl object-contain"/>
               </span>
 

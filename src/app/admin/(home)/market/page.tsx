@@ -4,7 +4,7 @@
 
 const page = () => {
   return (
-    <section className="py-10">
+    <section className="pb-10 pt-28">
       <div className="container">
         <div className="flex flex-col px-5">
           <div className="bg-[#007aff] rounded-[10px] mb-4">

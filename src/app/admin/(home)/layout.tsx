@@ -33,7 +33,7 @@ export default function HomeLayout({
     return (
       <>
        
-        <header>
+        <header className="border border-t-0 border-x-0 fixed w-full left-0 top-0 z-30">
             <div className="container">
                 <div className="flex items-center justify-between bg-white h-[64px] px-2">
                     <Link href="/" title="home">
@@ -47,25 +47,25 @@ export default function HomeLayout({
                           </Link>
                         </li>
                         <li>
-                          <Link href="/admin/market" title="dashboard" className="flex flex-col items-center text-[#727c8e] text-[14px] hover:text-red-600 transition">
+                          <Link href="/admin/market" title="market" className="flex flex-col items-center text-[#727c8e] text-[14px] hover:text-red-600 transition">
                               <FaBoxOpen className="text-xl"/>
                               Market
                           </Link>
                         </li>
                         <li>
-                          <Link href="/admin/stream" title="dashboard" className="flex flex-col items-center text-[#727c8e] text-[14px] hover:text-red-600 transition">
+                          <Link href="/admin/stream" title="oqim" className="flex flex-col items-center text-[#727c8e] text-[14px] hover:text-red-600 transition">
                              <FaLink className="text-xl"/>
                              Oqim
                           </Link>
                         </li>
                         <li>
-                          <Link href="/admin/statistic" title="dashboard" className="flex flex-col items-center text-[#727c8e] text-[14px] hover:text-red-600 transition">
+                          <Link href="/admin/statistic" title="statistika" className="flex flex-col items-center text-[#727c8e] text-[14px] hover:text-red-600 transition">
                               <FcStatistics className="text-xl"/>
                               Statistika
                           </Link>
                         </li>
                         <li>
-                          <Link href="/admin/payment" title="dashboard" className="flex flex-col items-center text-[#727c8e] hover:text-red-600 transition">
+                          <Link href="/admin/payment" title="tolov" className="flex flex-col items-center text-[#727c8e] hover:text-red-600 transition">
                               <MdOutlinePayments className="text-xl"/>
                               To'lov
                           </Link>
